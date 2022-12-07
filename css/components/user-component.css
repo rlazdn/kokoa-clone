@@ -15,30 +15,39 @@
   margin-right: 20px;
 }
 
+.user-component__avatar--xl {
+  width: 80px;
+  height: 80px;
+  border-radius: 35px;
+}
+
+.user-component__avatar--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+
 .user-component__title {
   font-size: 22px;
   font-weight: 600;
 }
 
-.user-component__subtitle {
+.user-component__subtitle,
+.user-component__time {
   margin-top: 8px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.4);
 }
 
-.friends-screen__channel {
-  margin-top: 25px;
-  border-top: solid 1px rgba(0, 0, 0, 0.1);
-  padding-top: 15px;
-}
-
-.friends-screen__channel-header {
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: space-between;
-  color: rgba(0, 0, 0, 0.5);
-}
-
 .user-component__column:last-child {
   color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 10px;
+}
+
+.user-component__time {
+  margin-bottom: 10px;
+  display: block;
 }

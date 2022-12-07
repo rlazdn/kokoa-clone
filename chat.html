@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends Screen - Kokoa clone</title>
+    <title>Document</title>
   </head>
   <body>
     <div class="status-bar">
@@ -22,56 +22,30 @@
         <i class="fas fa-bolt"></i>
       </div>
     </div>
+
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Chats</h1>
       <div class="screen-header__icon">
         <span><i class="fas fa-search fa-2x"></i> </span>
         <span><i class="fas fa-music fa-2x"></i></span>
         <span><i class="fas fa-cog fa-2x"></i></span>
+        <span><i class="fas fa-comment-medical fa-2x"></i></span>
       </div>
     </header>
-
-    <a id="friends-display-link">
-      <i class="fas fa-info-circle"></i>
-      Friends' Names Display
-      <i class="fas fa-chevron-right fa-xs"></i>
-    </a>
-
-    <main class="friends-screen">
+    <main class="main-screen">
       <div class="user-component">
         <div class="user-component__column">
-          <img
-            src="garrett-image.jpg"
-            class="user-component__avatar user-component__avatar--xl"
-          />
+          <img src="garrett-image.jpg" class="user-component__avatar" />
           <div class="user-component__text">
             <h4 class="user-component__title">Garrett</h4>
-            <!-- <h6 class="user-component__subtitle">subtitle</h6> !-->
-          </div>
-        </div>
-        <div class="user-component__column"></div>
-      </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fas fa-chevron-up"></i>
-        </div>
-      </div>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="garrett-image.jpg"
-            class="user-component__avatar user-component__avatar--sm"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Garrett</h4>
+            <h6 class="user-component__subtitle">
+              Please check My Kakoa Account Info
+            </h6>
           </div>
         </div>
         <div class="user-component__column">
-          <div>
-            <span>2</span>
-            <i class="fas fa-chevron-right"></i>
-          </div>
+          <span class="user-component__time">21:22</span>
+          <div class="badge">1</div>
         </div>
       </div>
     </main>
@@ -100,6 +74,7 @@
         </li>
       </ul>
     </nav>
+
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
