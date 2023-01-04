@@ -1,0 +1,39 @@
+.icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.icon-row__icon i {
+  font-size: 35px;
+}
+
+.icon-row__icon {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 25%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition: color 0.3s ease-in-out;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.icon-row__icon:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.icon-row__icon span {
+  margin-top: 25px;
+}
+
+.icon-row__icon .nav__notification {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+}

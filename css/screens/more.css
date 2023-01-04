@@ -1,0 +1,16 @@
+.user-component__text h6 i {
+  color: tomato;
+}
+
+.user-component__column > i {
+  font-size: 30px;
+}
+
+.more-screen .icon-row {
+  margin-top: 30px;
+}
+
+.more-suggestions {
+  border-top: var(--main-border);
+  padding-top: 30px;
+}

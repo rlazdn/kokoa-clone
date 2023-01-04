@@ -6,6 +6,10 @@
   margin-bottom: 15px;
 }
 
+.screen-header__icon {
+  position: relative;
+}
+
 .screen-header__title {
   font-size: 35px;
   font-weight: 600;
