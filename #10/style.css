@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+@import "css/header.css";
+@import "css/search.css";
+@import "css/best-album.css";
+@import "css/recommend.css";
+@import "css/best-artist.css";
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+input:focus {
+  outline: none;
+}

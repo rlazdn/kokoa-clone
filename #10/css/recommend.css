@@ -1,0 +1,26 @@
+.recommend__header {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.recommend__albums-list {
+  height: 180px;
+  display: flex;
+  overflow: auto;
+  margin-bottom: 35px;
+}
+
+.recommend__albums-list__album {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recommend__albums-list__album img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
