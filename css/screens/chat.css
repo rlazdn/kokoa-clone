@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 200%;
+  height: 200vh;
 }
 
 #chat-screen .alt-header,
@@ -21,11 +21,27 @@
   z-index: 1;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  1% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .main-chat {
   margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 0.3s linear;
 }
 
 .chat__timestamp {
@@ -37,10 +53,44 @@
   margin-bottom: 25px;
 }
 
+@keyframes messageFaidIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes messageOwnFaidIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .message-row {
   width: 100%;
   display: flex;
   margin-bottom: 25px;
+}
+
+.message-row:nth-child(2n) {
+  opacity: 0;
+  animation: messageFaidIn 0.5s ease forwards;
+  animation-delay: 1s;
+}
+
+.message-row:nth-child(2n + 1) {
+  opacity: 0;
+  animation: messageOwnFaidIn 0.5s ease forwards;
+  animation-delay: 2s;
 }
 
 .message-row img {
@@ -79,6 +129,7 @@
 .message-row--own {
   display: flex;
   justify-content: flex-end;
+  margin-right: 10px;
 }
 
 .message-row--own .message__info {
@@ -89,7 +140,7 @@
   background-color: var(--yellow);
   border-top-right-radius: 0px;
   border-top-left-radius: 15px;
-  margin-right: 0;
+  margin-right: 0px;
   margin-left: 5px;
 }
 
@@ -124,6 +175,7 @@
   border: var(--main-border);
   border-radius: 30px;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply__column:last-child > i,
@@ -147,4 +199,18 @@
 
 .reply button i {
   opacity: 1;
+}
+
+.reply__column:first-child {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.reply:focus-within input {
+  width: 93vw;
+  transform: translateX(-10%);
 }
